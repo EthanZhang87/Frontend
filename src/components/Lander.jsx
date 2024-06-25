@@ -6,7 +6,7 @@ function Lander() {
     <>
       <Navbar />
       {/* Main */}
-      <section className='h-screen bg-black '>
+      <section className='h-[800px] bg-black md:h-auto'>
 
         {/* Text */}
         <div className='px-10 md:px-60'>
