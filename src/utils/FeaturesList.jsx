@@ -9,7 +9,7 @@ export const Featureslist = [
   },
   {
     Topic: 'Real-Time Data',
-    Info: "Get real-time data updaes during live events to make infomed decisions on the fly."
+    Info: "Get real-time data updates during live events to make infomed decisions on the fly."
   },
 
 ];
