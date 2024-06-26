@@ -2,7 +2,6 @@ import React from 'react'
 import Lander from './components/Lander'
 import Video from './components/Video'
 import Features from './components/Features'
-import Waitlist from './components/Waitlist'
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
         <div className='space-y-20 '>
           <Video />
           <Features />
-          <Waitlist />
         </div>
       </div>
     </div>
