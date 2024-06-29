@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import ParticlesComponent from './Particles';
 import styled from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -12,6 +13,7 @@ function Lander() {
   `
   return (
     <>
+      <ParticlesComponent />
       <Navbar />
       {/* Main */}
       <section className='h-[675px] md:h-[350px]' data-aos="fade-up" data-aos-duration="3000">
