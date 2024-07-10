@@ -11,13 +11,12 @@ const StyledText = styled.h1`
   font-family: 'Outfit';
 `;
 
-AOS.init();
 
 function Lander() {
-  // // have AOS only runs once (when the component mounts)
-  // useEffect(() => {
-  //   AOS.init();
-  // }, []);
+  // have AOS only runs once (when the component mounts)
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>

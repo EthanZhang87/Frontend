@@ -9,9 +9,9 @@ const StyledText = styled.h1`
 
 const Navbar = () => {
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
 
   return (
     <div className='px-8 py-10 md:px-36' data-aos='fade-down' data-aos-duration="1500">
