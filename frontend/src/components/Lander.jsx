@@ -51,4 +51,4 @@ function Lander() {
   )
 }
 
-export default Lander
+export default Lander;
