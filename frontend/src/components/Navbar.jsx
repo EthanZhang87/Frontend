@@ -1,6 +1,4 @@
-import React from 'react';
 import styled from 'styled-components';
-
 
 const Navbar = () => {
 
@@ -15,7 +13,7 @@ const Navbar = () => {
           
           {/* Name */}
           <div className='flex space-x-2 items-center z-[2]'>
-          <img src='../assets/statoracle_logo.jpg' class='rounded-2xl size-8 shadow-lg' />
+          <img src='../assets/statoracle_logo.jpg' className='rounded-2xl size-8 shadow-lg' />
             <div className='font-semibold text-[#3d4561] md:text-2xl  '>
               <StyledText>StatOracle</StyledText>
             </div>

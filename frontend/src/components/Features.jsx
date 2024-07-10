@@ -1,4 +1,3 @@
-import React from 'react'
 import { Featureslist } from '../utils/FeaturesList'
 import AOS from 'aos';
 import 'aos/dist/aos.css';

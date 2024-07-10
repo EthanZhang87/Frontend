@@ -1,16 +1,23 @@
-import React from 'react'
-import Navbar from './Navbar'
+import { useEffect } from 'react';
+import Navbar from './Navbar';
 import ParticlesComponent from './Particles';
 import styled from 'styled-components';
+import '../index.css';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-AOS.init()
+
+// Styled component defined outside of the Lander function
+const StyledText = styled.h1`
+  font-family: 'Outfit';
+`;
 
 function Lander() {
+  // have AOS only runs once (when the component mounts)
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
-  const StyledText = styled.h1`
-    font-family: 'Outfit'
-  `
   return (
     <>
       <ParticlesComponent />
@@ -42,10 +49,8 @@ function Lander() {
                 Sign up now!
               </button>
             </div>
-
           </div>
         </div>
-        
       </section>
     </>
   )
