@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 const StyledText = styled.h1`
   font-family: 'Outfit';
 `;
+
 AOS.init();
 
 function Lander() {

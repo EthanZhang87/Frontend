@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Button } from "../components/ui/button";
+import { Button } from '../components/ui/button';
+import PropTypes from 'prop-types';
 
 const Authentication = ({ setIsAuthenticated }) => {
     const handleJoinWaitlist = () => {
@@ -14,6 +14,10 @@ const Authentication = ({ setIsAuthenticated }) => {
             <Button onClick={handleJoinWaitlist} className="text-xl px-6 py-3">Join Waitlist</Button>
         </div>
     );
+};
+
+Authentication.propTypes = {
+    setIsAuthenticated: PropTypes.func.isRequired,
 };
 
 export default Authentication;
