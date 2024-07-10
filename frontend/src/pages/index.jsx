@@ -3,6 +3,9 @@ import Video from '../components/Video';
 import Features from '../components/Features';
 import VideoUpload from '../components/VideoUpload';
 import '../index.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init()
 
 
 function Home() {
