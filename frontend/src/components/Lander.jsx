@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import Navbar from './Navbar';
 import ParticlesComponent from './Particles';
 import styled from 'styled-components';
-import '../index.css';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -11,12 +10,13 @@ import 'aos/dist/aos.css';
 const StyledText = styled.h1`
   font-family: 'Outfit';
 `;
+AOS.init();
 
 function Lander() {
-  // have AOS only runs once (when the component mounts)
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // // have AOS only runs once (when the component mounts)
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
 
   return (
     <>

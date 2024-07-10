@@ -1,7 +1,7 @@
-import Lander from '@/components/Lander';
-import Video from '@/components/Video';
-import Features from '@/components/Features';
-import VideoUpload from '@/components/VideoUpload';
+import Lander from '../components/Lander';
+import Video from '../components/Video';
+import Features from '../components/Features';
+import VideoUpload from '../components/VideoUpload';
 import '../index.css';
 
 

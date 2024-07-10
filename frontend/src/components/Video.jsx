@@ -1,13 +1,18 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-AOS.init()
+import { useEffect } from 'react';
 
-function Video() {
+const StyledText = styled.h1`
+  font-family: 'Outfit';
+`;
+
+const Video = () => {
   
-  const StyledText = styled.h1`
-  font-family: 'Outfit'
-`
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section>
       <div className="px-4 mx-auto text-white sm:px-6 sm:py-12 lg:px-8 lg:py-16">
@@ -33,7 +38,7 @@ function Video() {
               quidem quam repellat.
             </p>
 
-            <a href="#" className="inline-block px-12 py-3 mt-8 text-sm font-semibold text-[#3d4561] transition border shadow-md  border-[#3d4561] rounded-xl focus:outline-none focus:ring focus:ring-yellow-400" data-aos='fade-up' data-aos-duration="500">
+            <a href="#" className="inline-block px-12 py-3 mt-8 text-sm font-semibold text-[#3d4561] transition border shadow-md border-[#3d4561] rounded-xl focus:outline-none focus:ring focus:ring-yellow-400" data-aos='fade-up' data-aos-duration="500">
               Get Started Today
             </a>
           </div>
