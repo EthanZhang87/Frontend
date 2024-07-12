@@ -2,6 +2,10 @@ import { useState } from 'react';
 import axios from 'axios';
 import { Button } from "./ui/button";
 import Authentication from '../utils/auth';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const VideoUpload = () => {
     const [file, setFile] = useState(null);

@@ -2,10 +2,14 @@ import styled from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const StyledText = styled.h1`
   font-family: 'Outfit';
 `;
+
+AOS.init();
 
 const Video = () => {
   

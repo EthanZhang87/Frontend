@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Navbar from './Navbar';
 import ParticlesComponent from './Particles';
 import styled from 'styled-components';
+import WaitlistButton from './WaitlistButton';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -11,19 +12,20 @@ const StyledText = styled.h1`
   font-family: 'Outfit';
 `;
 
+AOS.init();
 
 function Lander() {
-  // have AOS only runs once (when the component mounts)
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // // have AOS only runs once (when the component mounts)
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
 
   return (
     <>
       <ParticlesComponent />
       <Navbar />
       {/* Main */}
-      <section className='h-[675px] md:h-[350px]' data-aos="fade-up" data-aos-duration="3000">
+      <section className='h-[675px] md:h-[350px]' data-aos="fade-up" data-aos-duration="600">
 
         {/* Text */}
         <div className='px-10 md:px-60'>
@@ -48,6 +50,9 @@ function Lander() {
               <button className="hover:brightness-110 hover:animate-pulse font-light py-2 px-5 rounded-full border-[#3d4561] bg-[#4f63a0] border-[0.5px] shadow-sm shadow-[#4f63a0] text-white">
                 Sign up now!
               </button>
+
+              {/* Waitlist Button */}
+              <WaitlistButton />
             </div>
           </div>
         </div>

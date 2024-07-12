@@ -1,0 +1,59 @@
+.hero-section {
+    position: relative;
+    overflow: hidden;
+  }
+  
+.blob {
+    border-radius: 50%;
+    filter: url(#noise-filter) blur(60px);
+    mix-blend-mode: screen;
+    position: absolute;
+    animation: blobAnimation 20s infinite;
+}
+
+.blob1 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle at 50% 50%, #ff7b7b, #ff3d3d);
+    top: 20%;
+    left: 25%;
+    animation-delay: 0s;
+}
+
+.blob2 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at 50% 50%, #8b6fff, #4d2fff);
+    top: 40%;
+    left: 60%;
+    animation-delay: 5s;
+}
+
+.blob3 {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle at 50% 50%, #ffd700, #ff8c00);
+    top: 60%;
+    left: 30%;
+    animation-delay: 10s;
+}
+
+@keyframes blobAnimation {
+    0%,
+    100% {
+    transform: scale(1) translate(0, 0);
+    }
+    25% {
+    transform: scale(1.1) translate(10px, -10px);
+    }
+    50% {
+    transform: scale(1.2) translate(-10px, 10px);
+    }
+    75% {
+    transform: scale(1.1) translate(-20px, -20px);
+    }
+}
+
+.subtext {
+    z-index: 10;
+}

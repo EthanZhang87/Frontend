@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import WaitlistButton from './WaitlistButton';
 
 const StyledText = styled.h1`
   font-family: 'Outfit';
@@ -29,6 +30,10 @@ const Navbar = () => {
         <button className="hover:brightness-110 hover:animate-pulse font-semibold py-2 px-2 rounded-full border-[#3d4561] border-[0.5px] shadow-sm shadow-[#3d4561] text-[#3d4561]">
           <StyledText>Join the waitlist!</StyledText>
         </button>
+
+        {/* Waitlist Button */}
+        <WaitlistButton />
+
       </div>
     </div>
   );
