@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import PlusSvg from "../../public/assets/PlusSvg";
+import PlusSvg from "../../../assets/PlusSvg";
 
 gsap.registerPlugin(ScrollTrigger);
 

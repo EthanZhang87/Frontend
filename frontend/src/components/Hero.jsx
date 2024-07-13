@@ -60,15 +60,15 @@ const Hero = () => {
     >
       <div className="container relative" ref={parallaxRef}>
         <div
-          className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]"
+          className="relative z-10 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]"
           ref={heroTitleRef}
         >
-          <h1 className="h1 mb-6">
-            Explore the Possibilities of&nbsp;AI&nbsp;Supporrt {` `}
+          <h1 className="h1 mb-6 text-white">
+            Transforming Sports with Accessible&nbsp;Analytics&nbsp;
             <span className="inline-block relative">
-              Brainwave{" "}
+              StatOracle {" "}
               <img
-                src="../public/assets/curve.png"
+                src="../assets/curve.png"
                 className="absolute top-full left-0 w-full xl:-mt-2"
                 width={624}
                 height={28}
@@ -77,7 +77,7 @@ const Hero = () => {
             </span>
           </h1>
           <p
-            className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8"
+            className="body-1 max-w-3xl mx-auto mb-6 text-[#CAC6DD] lg:mb-8"
             ref={heroTextRef}
           >
             Unleash the power of AI with StatOracle, your personal fitness trainer and AI sports analyst.  
@@ -87,16 +87,16 @@ const Hero = () => {
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
-          <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
-            <div className="relative bg-n-8 rounded-[1rem]">
-              <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
+          <div className="relative z-10 p-0.5 rounded-2xl bg-conic-gradient">
+            <div className="relative bg-[#0E0C15] rounded-[1rem]">
+              <div className="h-[1.4rem] bg-[#43435C] rounded-t-[0.9rem]" />
 
               <div
                 className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]"
                 ref={robotImgRef}
               >
                 <img
-                  src="@/public/assets/robot.jpg"
+                  src="../assets/robot.jpg"
                   className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
                   width={1024}
                   height={490}
@@ -112,7 +112,7 @@ const Hero = () => {
           </div>
           <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <img
-              src="../public/assets/hero-background.jpg"
+              src="../assets/hero-background.jpg"
               className="w-full"
               width={1440}
               height={1800}
@@ -123,8 +123,8 @@ const Hero = () => {
           <BackgroundCircles />
         </div>
 
-        <div ref={companyLogosRef} className="hidden relative z-10 mt-20 lg:block">
-          <img src="../public/assets/statoracle_logo.png" alt="StatOracle Logo" />
+        <div ref={companyLogosRef} className="hidden relative z-20 mt-20 lg:block">
+          <img src="../assets/statoracle_logo.png" alt="StatOracle Logo" />
         </div>
       </div>
 

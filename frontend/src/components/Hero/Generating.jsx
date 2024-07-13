@@ -5,7 +5,7 @@ const Generating = ({ className }) => {
         className || ""
       } text-base`}
     >
-      <img className="w-5 h-5 mr-4" src={"../../public/assets/loading.png"} alt="Loading" />
+      <img className="w-5 h-5 mr-4" src={"../../assets/loading.png"} alt="Loading" />
       AI is analyzing your game
     </div>
   );

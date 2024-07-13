@@ -21,7 +21,7 @@ const WaitlistButton = () => {
   return (
     <>
       <motion.button
-        className="bg-blue-500 text-white px-4 py-2 rounded-full"
+        className="font-Outfit text-white px-4 py-2 rounded-full hover:brightness-110 hover:animate-pulse font-light border-[#3d4561] bg-[#5b72b8] border-[0.5px] shadow-sm shadow-[#5b72b8]"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setIsOpen(true)}
@@ -36,9 +36,9 @@ const WaitlistButton = () => {
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Join Our Waitlist</DialogTitle>
+            <DialogTitle className="font-Outfit">Join Our Waitlist</DialogTitle>
           </DialogHeader>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="font-Outfit space-y-4">
             <Input
               type="email"
               placeholder="Email"
