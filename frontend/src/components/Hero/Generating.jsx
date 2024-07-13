@@ -1,5 +1,3 @@
-import { loading } from "../../public/assets";
-
 const Generating = ({ className }) => {
   return (
     <div
@@ -7,7 +5,7 @@ const Generating = ({ className }) => {
         className || ""
       } text-base`}
     >
-      <img className="w-5 h-5 mr-4" src={loading} alt="Loading" />
+      <img className="w-5 h-5 mr-4" src={"../../public/assets/loading.png"} alt="Loading" />
       AI is analyzing your game
     </div>
   );
