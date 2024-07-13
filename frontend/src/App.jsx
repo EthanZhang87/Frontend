@@ -1,21 +1,29 @@
-import React from 'react'
-import Lander from './components/Lander'
-import Video from './components/Video'
-import Features from './components/Features'
+// frontend\src\App.jsx
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/index';
+import AOSInit from './utils/aos';
+import Dashboard from './pages/Dashboard';
+// import AnalysisPage from './pages/AnalysisPage';
+import { AuthProvider } from './context/AuthContext';
+import LoginForm from './components/LoginForm';
+import PrivateRoute from './components/PrivateRoute';
+import './index.css';
 
-function App() {
+const App = () => {
   return (
-    <div className=' bg-gradient-to-b from-blue-300/15 to-white md:min-h-screen md:flex md:justify-center'>
-      <div className='md:max-w-[1263px] md:w-full md:flex md:flex-col'>
-        <Lander />
-        {/* Design Suggestion: Add arrow suggesting scroll down or demo */}
-        <div className='space-y-20 '>
-          <Video />
-          <Features />
-        </div>
-      </div>
-    </div>
-  )
-}
+    <AuthProvider>
+      <AOSInit />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+          {/* To be Implenented: */}
+          {/* <Route path="/analysis/:matchId" element={<AnalysisPage />} /> */}
+        </Routes>
+      </Router>
+    </AuthProvider>
+  );
+};
 
-export default App
+export default App;
