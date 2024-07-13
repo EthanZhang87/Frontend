@@ -17,10 +17,10 @@ const Navbar = () => {
     const scrollY = window.scrollY;
     const viewportHeight = window.innerHeight;
 
-    if (scrollY < viewportHeight * 0.4) {
+    if (scrollY < viewportHeight * 0.35) {
       setVisible(true);
     } else {
-      setVisible(scrollY < viewportHeight * 0.4 || scrollY - window.prevScrollY < 0);
+      setVisible(scrollY < viewportHeight * 0.35 || scrollY - window.prevScrollY < 0);
     }
 
     window.prevScrollY = scrollY;
@@ -83,17 +83,6 @@ const Navbar = () => {
               <StyledText>StatOracle</StyledText>
             </div>
           </motion.div>
-
-          {/* Button */}
-          <motion.button
-            className='hover:brightness-110 hover:animate-pulse font-semibold py-2 px-2 rounded-full border-[#3d4561] border-[0.5px] shadow-sm shadow-[#3d4561] text-[#3d4561]'
-            variants={{
-              hidden: { opacity: 0, y: -50 },
-              visible: { opacity: 1, y: 0 },
-            }}
-          >
-            <StyledText>Join the waitlist!</StyledText>
-          </motion.button>
 
           {/* Waitlist Button */}
           <motion.div

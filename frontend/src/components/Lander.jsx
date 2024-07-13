@@ -24,6 +24,7 @@ function Lander() {
     gsap.to(elements, {
       opacity: 1,
       y: 0,
+      delay: 0.15,
       duration: 0.6,
       stagger: 0.2,
       ease: 'power1.out',
@@ -49,7 +50,7 @@ function Lander() {
               className='text-5xl font-semibold text-center text-[#3d4561] mt-36 md:mt-14 md:text-6xl bg-gradient-to-r from-[#8ba0eb] via-[#4f63a0] to-[#5f80f5] inline-block text-transparent bg-clip-text animate-gradient-animation'
               ref={el => elementsRef.current[0] = el}
             >
-              <StyledText>Affordable and Advanced Soccer Analytics</StyledText>
+              <StyledText>Affordable and Advanced Sports Analytics</StyledText>
             </div>
             <div
               className='flex mt-6 text-lg text-center text-[#7c99b7] text-balance'

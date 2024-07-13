@@ -11,6 +11,11 @@ const WaitlistButton = () => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
 
+  // Todo: 1. Validate email and phone number (connect with backend)
+  // Todo: 2. Add API call to waitlist entry
+  // Todo: 3. Add success/error sonner message
+  // Todo: 4. Make authentication for signing up to waitlist, and make button unclickable if signed up (email)
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     // TODO: Implement API call to submit waitlist entry
@@ -27,7 +32,10 @@ const WaitlistButton = () => {
         onClick={() => setIsOpen(true)}
       >
         {isSubmitted ? (
-          <Check className="w-6 h-6" />
+          <div className='flex items-center'>
+            <Check className="w-6 h-6 mr-2" />
+            Thank you for joining our waitlist!
+          </div>
         ) : (
           'Join Waitlist'
         )}
