@@ -48,7 +48,7 @@ const Navbar = () => {
         transition={{
           duration: 0.3,
         }}
-        className='px-8 py-10 md:px-36 fixed top-0 inset-x-0 mx-auto'
+        className='px-8 py-10 md:px-36 fixed top-0 inset-x-0 mx-auto bg-transparent z-50'
       >
         <motion.div
           initial='hidden'
@@ -64,7 +64,7 @@ const Navbar = () => {
               },
             },
           }}
-          className='flex items-center justify-between py-4 border-[#3d4561] shadow-md border-spacing-1 rounded-2xl shadow-[#3d4561] bg-blue-100/1 px-7'
+          className='flex items-center justify-between py-4 border-[#3d4561] shadow-md border-spacing-1 rounded-2xl shadow-[#3d4561] bg-blue-100/1 px-7 bg-gradient-to-r from-blue-100 to-purple-100 backdrop:blur-md'
         >
           {/* Name */}
           <motion.div

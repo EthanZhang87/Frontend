@@ -30,6 +30,7 @@ function Lander() {
       scrollTrigger: {
         trigger: sectionRef.current,
         start: 'top 80%', // start the animation when the top of the section hits 80% of the viewport height
+        toggleActions: 'play reverse play none',
       },
     });
   }, []);
@@ -40,7 +41,7 @@ function Lander() {
       <Navbar />
       <section
         ref={sectionRef}
-        className='h-[675px] md:h-[350px]'
+        className='h-screen flex items-center justify-center'
       >
         <div className='px-10 md:px-60'>
           <div className='font-Outfit flex flex-col items-center justify-center'>
