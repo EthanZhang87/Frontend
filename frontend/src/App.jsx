@@ -8,6 +8,7 @@ function App() {
     <div className=' bg-gradient-to-b from-blue-300/15 to-white md:min-h-screen md:flex md:justify-center'>
       <div className='md:max-w-[1263px] md:w-full md:flex md:flex-col'>
         <Lander />
+        {/* Design Suggestion: Add arrow suggesting scroll down or demo */}
         <div className='space-y-20 '>
           <Video />
           <Features />
