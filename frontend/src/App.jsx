@@ -4,7 +4,7 @@ import Home from './pages/index';
 import Dashboard from './pages/Dashboard';
 // import AnalysisPage from './pages/AnalysisPage';
 import { AuthProvider } from './context/AuthContext';
-import LoginForm from './components/LoginForm.tsx';
+import LoginForm from './pages/Login.tsx';
 import PrivateRoute from './components/PrivateRoute';
 import './index.css';
 
