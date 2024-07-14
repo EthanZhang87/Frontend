@@ -2,10 +2,12 @@ import { useState } from 'react';
 import axios from 'axios';
 import { Button } from "./ui/button";
 import Authentication from '../utils/auth';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
-AOS.init();
+// AOS.init();
+
+// TODO: Add GSAP animations   
 
 const VideoUpload = () => {
     const [file, setFile] = useState(null);
@@ -87,6 +89,12 @@ const VideoUpload = () => {
                         className={`${(!file || isUploading || isUploaded) ? 'opacity-50 cursor-not-allowed' : ''} ${isUploaded ? 'animate-pulse' : ''} mt-4 text-xl px-6 py-3`}
                     >
                         Upload
+                    </Button>
+                    <Button variant={'outline'} onClick={() => setFile(null)} className="mt-4 text-xl px-6 py-3">Clear</Button>
+
+
+                    <Button>
+                        <a href="/dashboard" className="text-xl px-6 py-3">Go to Dashboard</a>
                     </Button>
                 </>
             )}

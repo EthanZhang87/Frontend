@@ -1,18 +1,16 @@
 // frontend\src\App.jsx
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/index';
-import AOSInit from './utils/aos';
 import Dashboard from './pages/Dashboard';
 // import AnalysisPage from './pages/AnalysisPage';
 import { AuthProvider } from './context/AuthContext';
-import LoginForm from './components/LoginForm';
+import LoginForm from './components/LoginForm.tsx';
 import PrivateRoute from './components/PrivateRoute';
 import './index.css';
 
 const App = () => {
   return (
     <AuthProvider>
-      <AOSInit />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
