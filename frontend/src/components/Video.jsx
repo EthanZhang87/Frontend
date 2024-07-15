@@ -27,7 +27,7 @@ const Video = () => {
       scrollTrigger: {
         trigger: sectionRef.current,
         start: 'top 80%', // start the animation when the top of the section hits 80% of the viewport height
-        toggleActions: 'play reverse play none',
+        toggleActions: 'play reverse restart reset',
       },
     });
   }, []);

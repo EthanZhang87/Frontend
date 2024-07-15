@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import { AuthProvider } from './context/AuthContext';
 import LoginForm from './pages/Login.tsx';
 import PrivateRoute from './components/PrivateRoute';
+import Onboarding from './pages/Onboarding';
 import './index.css';
 
 const App = () => {
@@ -16,6 +17,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+          <Route path="/onboarding" element={<Onboarding />} />
+          <Route path="/dashboard-force" element={<Dashboard />} />
           {/* To be Implenented: */}
           {/* <Route path="/analysis/:matchId" element={<AnalysisPage />} /> */}
         </Routes>

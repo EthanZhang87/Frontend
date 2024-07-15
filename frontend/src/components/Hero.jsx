@@ -58,12 +58,12 @@ const Hero = () => {
       customPaddings
       id="hero"
     >
-      <div className="container relative" ref={parallaxRef}>
+      <div className="container flex- relative" ref={parallaxRef}>
         <div
           className="relative z-10 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]"
           ref={heroTitleRef}
         >
-          <h1 className="h1 mb-6 text-white">
+          <h1 className="h1 font-Outfit mb-6 text-white">
             Transforming Sports with Accessible&nbsp;Analytics&nbsp;
             <span className="inline-block relative">
               StatOracle {" "}
@@ -77,12 +77,12 @@ const Hero = () => {
             </span>
           </h1>
           <p
-            className="body-1 max-w-3xl mx-auto mb-6 text-[#CAC6DD] lg:mb-8"
+            className="body-1 font-Outfit max-w-3xl mx-auto mb-6 text-[#CAC6DD] lg:mb-8"
             ref={heroTextRef}
           >
-            Unleash the power of AI with StatOracle, your personal fitness trainer and AI sports analyst.  
+            Empower your training with StatOracle, your personal sports trainer and analyst.  
           </p>
-          <Button href="/pricing" white>
+          <Button variant="primary" size="lg" className="bg-white">
             Get started
           </Button>
         </div>

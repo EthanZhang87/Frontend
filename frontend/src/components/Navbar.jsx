@@ -75,8 +75,8 @@ const Navbar = () => {
             }}
           >
             <img
-              src='../assets/statoracle_logo.jpg'
-              className='rounded-2xl size-8 shadow-lg'
+              src='../assets/statoracle_logo.png'
+              className='rounded-full size-9 shadow-lg'
               alt='StatOracle Logo'
             />
             <div className='font-semibold text-[#3d4561] md:text-2xl'>

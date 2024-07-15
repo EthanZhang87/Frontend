@@ -10,6 +10,7 @@ import { FaGoogle, FaDiscord } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { LogIn } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { Navigate, useNavigate } from 'react-router-dom'; 
 
 // Define types for state variables
 interface Errors {
@@ -31,7 +32,7 @@ const SignIn = () => {
   const [errors, setErrors] = useState<Errors>({});
 
   const { googleSignIn } = useAuth();
-
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -76,6 +77,23 @@ const SignIn = () => {
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const handlePostAuth = (user) => {
+    // Check if the user exists in the database
+    // This is a placeholder logic; replace with actual database check
+    const userExists = checkUserInDatabase(user.uid);
+    if (!userExists) {
+      navigate('/onboarding');
+    } else {
+      navigate('/dashboard');
+    }
+  };
+
+  const checkUserInDatabase = (uid) => {
+    // Placeholder function to check user in database
+    // Replace with actual database call
+    return false; // Assuming the user does not exist for demonstration
   };
 
   const handleResetPassword = async () => {

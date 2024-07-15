@@ -25,7 +25,7 @@ function Features() {
       scrollTrigger: {
         trigger: heading,
         start: 'top 80%',
-        toggleActions: 'play reverse play none',
+        toggleActions: 'play reverse restart reset',
       },
     });
 
@@ -38,7 +38,7 @@ function Features() {
       scrollTrigger: {
         trigger: articleRef.current,
         start: 'top 80%',
-        toggleActions: 'play reverse play none',
+        toggleActions: 'play reverse restart reset',
       },
     });
   }, []);
